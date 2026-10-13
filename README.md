@@ -17,7 +17,7 @@ npm ci
 npm run dev
 ```
 
-Run `npm run lint` and `npm run build` in any of the Vite projects to check it locally. GitHub Actions runs both checks for all three projects on pushes and pull requests to `main`.
+Run `npm audit`, `npm run lint`, and `npm run build` in any of the Vite projects to check it locally. GitHub Actions runs these checks for all three projects on pushes and pull requests to `main`.
 
 ## Other repositories
 
