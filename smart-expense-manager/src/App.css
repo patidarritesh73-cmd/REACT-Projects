@@ -1,0 +1,154 @@
+ /*Header*/
+ .header{
+  text-align: center;
+  padding: 30px 20px;
+}
+.header h1{
+  margin-bottom: 8px;
+}
+/*Main*/
+.container{
+  width:min(1100px,90%);
+  margin:auto; 
+}
+.section{
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border:2px solid rgb(27, 25, 25);
+}
+/*Footer*/
+.footer{
+  text-align: center;
+  padding: 25px;
+}
+/*Dashboard*/
+.dashboard-grid{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap:20px;
+}
+.dashboard-card{
+  background: #f0f2f5;
+  padding: 20px;
+  border-radius: 10px;
+}
+.dashboard-card h3{
+  margin-top: 0;
+}
+.dashboard-card p{
+  font-size: 24px;
+  font-weight: bold;
+}
+/*Expense Form*/
+.expense-form{
+  display:grid;
+  gap:16px;
+}
+.expense-form div{
+  display: flex;
+  flex-direction: column;
+  gap:6px;
+}
+.expense-form input,
+.expense-form select{
+  padding: 12px;
+  border:1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.expense-form button{
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor:pointer;
+  width:150px;
+}
+/*responsive*/
+@media (max-width: 900px){
+  .dashboard-grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 600px){
+  .dashboard-grid{
+    grid-template-columns: 1fr;
+  }
+}
+/*Expense list*/
+.expenses-list{
+  display: grid;
+  gap: 15px;
+ 
+}
+/*expense card*/
+.expense-card{
+  background:#f0f2f5;
+  padding:18px;
+  border-radius:10px;
+  border:1px solid #e5e7eb;
+}
+.expense-card h3{
+  margin-top:0;
+  margin-bottom:10px;
+}
+.expense-card p{
+  margin: 6px 10px;
+}
+.expense-card button{
+  margin-top: 12px;
+  margin-right: 8px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+.expense-card button:first-of-type{
+  background: #2563eb;
+}
+.expense-card button:last-of-type{
+  background: #df4040;
+}
+/*expenses controls*/
+.expense-controls{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.expense-controls input,
+.expense-controls select{
+  padding:12px;
+  border:1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+@media (max-width:700px){
+  .expense-controls{
+    grid-template-columns: 1fr;
+  }
+}
+.category-summry{
+  margin-top: 30px;
+}
+.category-summry h3{
+  margin-bottom: 15px;
+}
+.category-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:14px 16px;
+  margin-bottom: 10px;
+  background:#f0f2f5;
+  border-radius:8px;
+  border: 1px solid #e5e7eb;
+}
+.category-row strong{
+  font-size: 17px;
+}
